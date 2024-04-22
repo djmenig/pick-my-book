@@ -1,0 +1,18 @@
+{
+  "name": "superhero-battle",
+  "description": "Have you ever wondered which superhero would win? Find out in this simple web app that pits two superheroes against each other.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Donald J. Menig",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
