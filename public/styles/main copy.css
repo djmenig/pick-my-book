@@ -14,8 +14,8 @@ html, body {
 .page-wrapper {
     box-sizing: border-box;
     min-height: 100svh;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
     padding: 0;
 }
 .headerContainer, footer {
@@ -44,7 +44,7 @@ h1 {
     flex-grow: 1;
     padding: 0 0.5rem;
 }
-.selectionImageContainer, .indexImageContainer {
+.imageContainer, .indexImageContainer {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -98,19 +98,24 @@ footer * {
 
 @media (min-width: 768px) {
     .selectionMainContainer {
-        flex-direction: row;
-        justify-content: center;
-        gap: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    .selectionImageContainer {
-        width: max-content;
-        padding: 0;
-        justify-content: center;
-
+    .imageContainer {
+        width: 100%;
+        padding: 1rem 0;
     }
     .selectionImage {
         object-fit: scale-down;
-        max-width: 85%;
+        max-width: 80%;
+    }
+    .bookInformationContainer {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .selectionTitle {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
     }
     .selectionTextWrapper {
         display: flex;

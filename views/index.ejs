@@ -1,17 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superhero Battle!</title>
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
-</head>
-<body>
-    <h1>Pick My Book</h1>
-    <div class="formContainer">
-        <form>
-           
-        </form>
+<%- include("partials/header.ejs") %>
+
+    <div class="indexMainContainer">
+        <div class ="indexImageContainer">
+            <h2>Select your <u>subject</u> and click the button for your book!</h2>
+        </div>
+        <div class="formContainer">
+            <form action="/selection" method="POST">
+                <select name="selectedSubject" id="subjects" value="fiction">
+                    <option selected="selected">fiction</option>
+                    <option value="adventure">adventure</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="fiction">fiction</option>
+                    <option value="horror">horror</option>
+                    <option value="history">history</option>
+                    <option value="humor">humor</option>
+                    <option value="mystery">mystery</option>
+                    <option value="non-fiction">non-ficdtion</option>
+                    <option value="science fiction">science fiction</option>
+                    <option value="romance">romance</option>
+                    <option value="thriller">thriller</option>
+                    <option value="western">western</option>   
+                </select>
+                <button type="submit">Pick My Book!</button>
+            </form>
+        </div>
     </div>
-</body>
-</html>
+
+<%- include("partials/footer.ejs") %>
