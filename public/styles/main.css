@@ -34,6 +34,7 @@ h1 {
     font-size: 4rem;
     margin: 0;
     color: #DFD0B8;
+    text-shadow: 2px 2px black;
 }
 .selectionMainContainer, .indexMainContainer {
     display: flex;
@@ -89,7 +90,8 @@ form * {
     text-align: center;
     border-radius: 15px;
     padding: 1rem;
-    color: #153448;
+    color: #DFD0B8;
+    background-color: #153448;
 }
 footer * {
     font-family: 'Times New Roman', Times, serif;
