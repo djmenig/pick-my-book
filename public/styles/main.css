@@ -4,7 +4,6 @@
 font-family: "Licorice", cursive;
 font-family: "Roboto", "sans serif"; */
 
-
 html, body {
     box-sizing: border-box;
     height: 100%;
@@ -43,6 +42,7 @@ h1 {
     justify-content: space-evenly;
     flex-grow: 1;
     padding: 0 0.5rem;
+    background-color:#DFD0B8;
 }
 .selectionImageContainer, .indexImageContainer {
     display: flex;
