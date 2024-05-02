@@ -1,6 +1,6 @@
 {
-  "name": "superhero-battle",
-  "description": "Have you ever wondered which superhero would win? Find out in this simple web app that pits two superheroes against each other.",
+  "name": "pick-my-book",
+  "description": "An app that picks the next book you should read based on the subject of your choosing.",
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
