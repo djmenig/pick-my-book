@@ -17,24 +17,23 @@ html, body {
     flex-direction: column;
     padding: 0;
 }
-.headerContainer, footer {
+.headerContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-grow: 0;
     flex-shrink: 0;
     text-align: center;
     background-color: #153448;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 0.5rem;
 }
-h1 {
+h1, h1 > a {
     font-family: "Licorice", cursive;
     font-size: 4rem;
     margin: 0;
     color: #DFD0B8;
     text-shadow: 2px 2px black;
+    text-decoration: none;
 }
 .selectionMainContainer, .indexMainContainer {
     display: flex;
@@ -73,7 +72,11 @@ h2 {
     text-align: center;
     margin: 1rem;
 }
-p, a {
+.bookInformationContainer > a {
+    color: #3C5B6F;
+    font-family: "Roboto", "sans serif";
+}
+p {
     margin: 0 0 .5rem 0;
     color: #3C5B6F;
     font-family: "Roboto", "sans serif";
@@ -89,17 +92,58 @@ form {
     align-items: center;
 }
 form * {
+    background-color: #153448;
+    border-radius: 15px;
+    border: 0;
+    color: #DFD0B8;
+    cursor: pointer;
     font-family: "Roboto", "sans serif";
     font-size: 1.5rem;
-    text-align: center;
-    border-radius: 15px;
     padding: 1rem;
+    text-align: center;
+}
+
+select {
+    outline: none;
+}
+select:hover {
+    color: #DFD0B899;
+}
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+select:active, button:active {
+    box-shadow: none;
     color: #DFD0B8;
-    background-color: #153448;
+    transform: translateY(0);
+}
+footer {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-grow: 0;
+flex-shrink: 0;
+text-align: center;
+background-color: #153448;
+padding: 0.5rem;
+gap: 1rem;
 }
 footer * {
     font-family: 'Times New Roman', Times, serif;
     color: #DFD0B8;
+}
+.icon {
+    width: 1rem;
+    fill: #DFD0B8;
+    margin-bottom: 0.25rem;
+}
+.footerText {
+    min-width: fit-content;
+}
+.footerLinks {
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 768px) {
